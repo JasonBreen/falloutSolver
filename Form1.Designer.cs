@@ -47,30 +47,24 @@
             this.guessDisplay = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.corrNum = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.corrNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // slv
             // 
             this.slv.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.slv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.slv.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.slv, "slv");
             this.slv.Name = "slv";
-            this.slv.Size = new System.Drawing.Size(75, 23);
-            this.slv.TabIndex = 1;
-            this.slv.Text = "Solve";
             this.slv.UseVisualStyleBackColor = false;
             this.slv.Click += new System.EventHandler(this.slv_Click);
             // 
             // slvd
             // 
             this.slvd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.slvd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.slvd.Location = new System.Drawing.Point(93, 12);
+            resources.ApplyResources(this.slvd, "slvd");
             this.slvd.Name = "slvd";
-            this.slvd.Size = new System.Drawing.Size(75, 23);
-            this.slvd.TabIndex = 2;
-            this.slvd.Text = "Solved";
             this.slvd.UseVisualStyleBackColor = false;
             this.slvd.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -78,156 +72,127 @@
             // 
             this.word0.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word0.Location = new System.Drawing.Point(12, 64);
+            resources.ApplyResources(this.word0, "word0");
             this.word0.Name = "word0";
-            this.word0.Size = new System.Drawing.Size(119, 20);
-            this.word0.TabIndex = 3;
             // 
             // word1
             // 
             this.word1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word1.Location = new System.Drawing.Point(12, 90);
+            resources.ApplyResources(this.word1, "word1");
             this.word1.Name = "word1";
-            this.word1.Size = new System.Drawing.Size(119, 20);
-            this.word1.TabIndex = 4;
             // 
             // word2
             // 
             this.word2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word2.Location = new System.Drawing.Point(12, 116);
+            resources.ApplyResources(this.word2, "word2");
             this.word2.Name = "word2";
-            this.word2.Size = new System.Drawing.Size(119, 20);
-            this.word2.TabIndex = 5;
             // 
             // word3
             // 
             this.word3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word3.Location = new System.Drawing.Point(12, 142);
+            resources.ApplyResources(this.word3, "word3");
             this.word3.Name = "word3";
-            this.word3.Size = new System.Drawing.Size(119, 20);
-            this.word3.TabIndex = 6;
             // 
             // word4
             // 
             this.word4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word4.Location = new System.Drawing.Point(12, 168);
+            resources.ApplyResources(this.word4, "word4");
             this.word4.Name = "word4";
-            this.word4.Size = new System.Drawing.Size(119, 20);
-            this.word4.TabIndex = 7;
             // 
             // word5
             // 
             this.word5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word5.Location = new System.Drawing.Point(12, 194);
+            resources.ApplyResources(this.word5, "word5");
             this.word5.Name = "word5";
-            this.word5.Size = new System.Drawing.Size(119, 20);
-            this.word5.TabIndex = 8;
             // 
             // word6
             // 
             this.word6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word6.Location = new System.Drawing.Point(12, 220);
+            resources.ApplyResources(this.word6, "word6");
             this.word6.Name = "word6";
-            this.word6.Size = new System.Drawing.Size(119, 20);
-            this.word6.TabIndex = 9;
             // 
             // word7
             // 
             this.word7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word7.Location = new System.Drawing.Point(12, 246);
+            resources.ApplyResources(this.word7, "word7");
             this.word7.Name = "word7";
-            this.word7.Size = new System.Drawing.Size(119, 20);
-            this.word7.TabIndex = 10;
             // 
             // word8
             // 
             this.word8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word8.Location = new System.Drawing.Point(12, 272);
+            resources.ApplyResources(this.word8, "word8");
             this.word8.Name = "word8";
-            this.word8.Size = new System.Drawing.Size(119, 20);
-            this.word8.TabIndex = 11;
             this.word8.TextChanged += new System.EventHandler(this.word8_TextChanged);
             // 
             // word9
             // 
             this.word9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word9.Location = new System.Drawing.Point(12, 298);
+            resources.ApplyResources(this.word9, "word9");
             this.word9.Name = "word9";
-            this.word9.Size = new System.Drawing.Size(119, 20);
-            this.word9.TabIndex = 12;
             this.word9.TextChanged += new System.EventHandler(this.word9_TextChanged);
             // 
             // word10
             // 
             this.word10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word10.Location = new System.Drawing.Point(12, 324);
+            resources.ApplyResources(this.word10, "word10");
             this.word10.Name = "word10";
-            this.word10.Size = new System.Drawing.Size(119, 20);
-            this.word10.TabIndex = 13;
             // 
             // word11
             // 
             this.word11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.word11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.word11.Location = new System.Drawing.Point(12, 350);
+            resources.ApplyResources(this.word11, "word11");
             this.word11.Name = "word11";
-            this.word11.Size = new System.Drawing.Size(119, 20);
-            this.word11.TabIndex = 14;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 21);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 14);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Guess:";
             // 
             // guessDisplay
             // 
-            this.guessDisplay.Location = new System.Drawing.Point(326, 21);
+            resources.ApplyResources(this.guessDisplay, "guessDisplay");
             this.guessDisplay.Name = "guessDisplay";
-            this.guessDisplay.Size = new System.Drawing.Size(101, 14);
-            this.guessDisplay.TabIndex = 16;
             this.guessDisplay.Click += new System.EventHandler(this.guessDisplay_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(268, 48);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 14);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "How many correct?:";
             // 
             // corrNum
             // 
             this.corrNum.BackColor = System.Drawing.SystemColors.InfoText;
             this.corrNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.corrNum.Location = new System.Drawing.Point(407, 46);
+            resources.ApplyResources(this.corrNum, "corrNum");
             this.corrNum.Maximum = new decimal(new int[] {
             14,
             0,
             0,
             0});
             this.corrNum.Name = "corrNum";
-            this.corrNum.Size = new System.Drawing.Size(45, 20);
-            this.corrNum.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Solver
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(593, 412);
+            resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.corrNum);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guessDisplay);
@@ -247,13 +212,13 @@
             this.Controls.Add(this.slvd);
             this.Controls.Add(this.slv);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Solver";
             this.Load += new System.EventHandler(this.Solver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.corrNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,6 +265,7 @@
         private System.Windows.Forms.Label guessDisplay;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown corrNum;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

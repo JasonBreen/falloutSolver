@@ -95,7 +95,13 @@ namespace falloutSolver
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            foreach (TextBox textbox in boxes)
+            {
+                textbox.Text = "";
+            }
+            guess = "";
+            tick = 0;
+            guessDisplay.Text = "";
         }
 
         private void word9_TextChanged(object sender, EventArgs e)
@@ -137,7 +143,7 @@ namespace falloutSolver
              * suggest an answer
              * remove the suggestion and impossible words
              */
-                List<string> answers = new List<string>();
+                List<int> answers = new List<int>();
                 int c = (int)corrNum.Value;
                 //runs through the array of words, find matches by character and determine possible answers
                 for (int i = 0; i < words.Length - 1; i++)
@@ -157,14 +163,18 @@ namespace falloutSolver
                         }
                         if (c == matches) //determines possible answers
                         {
-                            answers.Add(words[i]);
+                            answers.Add(i);
+                        }
+                        else
+                        {
+                            boxes[i].Text = "";
                         }
                     }
                 }
                 int choice = rand.Next(0, answers.Count);
-                guessDisplay.Text = answers[choice];
-                guess = answers[choice];
-                answers.RemoveAt(choice);
+                guessDisplay.Text = words[answers[choice]];
+                guess = words[answers[choice]];
+                boxes[answers[choice]].Text = "";
             }
             tick++;
         }
