@@ -125,7 +125,7 @@ namespace falloutSolver
             }
             else
             {
-                /*
+             /*
              * properties
              * list of words
              * number of characters in common with the answer
