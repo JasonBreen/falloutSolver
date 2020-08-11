@@ -1034,7 +1034,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Fallout Terminal Solver v0.1a</value>
+    <value>Fallout Terminal Solver v0.1.2a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Solver</value>

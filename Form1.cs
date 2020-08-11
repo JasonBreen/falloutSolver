@@ -8,18 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace falloutSolver
 {
     public partial class Solver : Form
     {
         public List<TextBox> boxes;
+        private SoundPlayer sp1 = new SoundPlayer();
+        private SoundPlayer sp2 = new SoundPlayer();
         string guess;
         int tick = 0;
         Random rand = new Random();
         public Solver()
         {
             InitializeComponent();
+            System.IO.Stream sel = Properties.Resources.select;
+            System.IO.Stream hum = Properties.Resources.terminalHum;
+            sp1 = new SoundPlayer(hum);
+            sp1.PlayLooping();
+            sp2 = new SoundPlayer(sel);
             boxes = new List<TextBox>();
             boxes.Add(word0);
             boxes.Add(word1);
@@ -37,7 +45,7 @@ namespace falloutSolver
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,22 +57,22 @@ namespace falloutSolver
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            sp2.Play();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -75,26 +83,27 @@ namespace falloutSolver
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            sp2.Play();
             foreach (TextBox textbox in boxes)
             {
                 textbox.Text = "";
@@ -106,16 +115,17 @@ namespace falloutSolver
 
         private void word9_TextChanged(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void word8_TextChanged(object sender, EventArgs e)
         {
-
+            sp2.Play();
         }
 
         private void slv_Click(object sender, EventArgs e)
         {
+            sp2.Play();
             string[] words = new string[12];
             for (int i = 0; i < 12; i++)
             {
@@ -128,6 +138,7 @@ namespace falloutSolver
                 guessDisplay.Text = words[choice];
                 boxes[choice].Text = "";
                 guess = words[choice];
+                tick++;
             }
             else
             {
@@ -172,11 +183,18 @@ namespace falloutSolver
                     }
                 }
                 int choice = rand.Next(0, answers.Count);
-                guessDisplay.Text = words[answers[choice]];
-                guess = words[answers[choice]];
-                boxes[answers[choice]].Text = "";
+                if (answers.Count > 0)
+                {
+                    guessDisplay.Text = words[answers[choice]];
+                    guess = words[answers[choice]];
+                    boxes[answers[choice]].Text = "";
+                    tick++;
+                }
+                else
+                {
+                    MessageBox.Show("No more entries!");
+                }
             }
-            tick++;
         }
 
         private void Solver_Load(object sender, EventArgs e)
@@ -186,7 +204,57 @@ namespace falloutSolver
 
         private void guessDisplay_Click(object sender, EventArgs e)
         {
+            sp2.Play();
+        }
 
+        private void word0_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word1_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word2_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word3_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word4_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word5_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word6_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word7_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word10_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
+        }
+
+        private void word11_TextChanged(object sender, EventArgs e)
+        {
+            sp2.Play();
         }
     }
 }

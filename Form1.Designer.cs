@@ -74,6 +74,7 @@
             this.word0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word0, "word0");
             this.word0.Name = "word0";
+            this.word0.TextChanged += new System.EventHandler(this.word0_TextChanged);
             // 
             // word1
             // 
@@ -81,6 +82,7 @@
             this.word1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word1, "word1");
             this.word1.Name = "word1";
+            this.word1.TextChanged += new System.EventHandler(this.word1_TextChanged);
             // 
             // word2
             // 
@@ -88,6 +90,7 @@
             this.word2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word2, "word2");
             this.word2.Name = "word2";
+            this.word2.TextChanged += new System.EventHandler(this.word2_TextChanged);
             // 
             // word3
             // 
@@ -95,6 +98,7 @@
             this.word3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word3, "word3");
             this.word3.Name = "word3";
+            this.word3.TextChanged += new System.EventHandler(this.word3_TextChanged);
             // 
             // word4
             // 
@@ -102,6 +106,7 @@
             this.word4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word4, "word4");
             this.word4.Name = "word4";
+            this.word4.TextChanged += new System.EventHandler(this.word4_TextChanged);
             // 
             // word5
             // 
@@ -109,6 +114,7 @@
             this.word5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word5, "word5");
             this.word5.Name = "word5";
+            this.word5.TextChanged += new System.EventHandler(this.word5_TextChanged);
             // 
             // word6
             // 
@@ -116,6 +122,7 @@
             this.word6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word6, "word6");
             this.word6.Name = "word6";
+            this.word6.TextChanged += new System.EventHandler(this.word6_TextChanged);
             // 
             // word7
             // 
@@ -123,6 +130,7 @@
             this.word7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word7, "word7");
             this.word7.Name = "word7";
+            this.word7.TextChanged += new System.EventHandler(this.word7_TextChanged);
             // 
             // word8
             // 
@@ -146,6 +154,7 @@
             this.word10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word10, "word10");
             this.word10.Name = "word10";
+            this.word10.TextChanged += new System.EventHandler(this.word10_TextChanged);
             // 
             // word11
             // 
@@ -153,6 +162,7 @@
             this.word11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.word11, "word11");
             this.word11.Name = "word11";
+            this.word11.TextChanged += new System.EventHandler(this.word11_TextChanged);
             // 
             // label4
             // 
@@ -216,6 +226,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Solver";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Solver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.corrNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
